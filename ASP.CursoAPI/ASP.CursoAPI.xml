@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>ASP.CursoAPI</name>
+    </assembly>
+    <members>
+        <member name="M:ASP.CursoAPI.Controllers.CursoController.Post(ASP.CursoAPI.Models.Cursos.CursoViewModeInput)">
+            <summary>
+            Este serviço permite cadastrar curso para o usuário autenticado.
+            </summary>
+            <returns>Retorna status 201 e dados do curso do usuário</returns>
+        </member>
+        <member name="M:ASP.CursoAPI.Controllers.CursoController.Get">
+            <summary>
+            Este serviço permite obter todos os cursos ativos do usuário.
+            </summary>
+            <returns>Retorna status ok e dados do curso do usuário</returns>
+        </member>
+        <member name="M:ASP.CursoAPI.Controllers.UsuarioController.Logar(ASP.CursoAPI.Models.Usuarios.LoginViewModelInput)">
+            <summary>
+            Este serviço permite autenticar um usuário cadastrado e ativo.
+            </summary>
+            <param name="loginViewModelInput">View Model do Login</param>
+            <returns>Retorna status ok, dados do usuário e o token em caso de sucesso</returns>
+        </member>
+        <member name="M:ASP.CursoAPI.Controllers.UsuarioController.Registrar(ASP.CursoAPI.Models.Usuarios.RegistroViewModelInput)">
+            <summary>
+            Este serviço permite cadastrar um usuário não existente
+            </summary>
+            <param name="registroViewModelInput">View Model do Registro</param>
+        </member>
+    </members>
+</doc>
